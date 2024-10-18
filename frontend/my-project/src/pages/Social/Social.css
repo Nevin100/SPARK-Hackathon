@@ -1,0 +1,236 @@
+.social-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    font-size: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 20px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    animation: typing 3s steps(20), blink 1s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    0% { border-right-color: black; }
+    100% { border-right-color: transparent; }
+}
+
+/* Floating button */
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 2rem;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.floating-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Form Design */
+.centered-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: 400px;
+    max-width: 90%;
+    animation: slide-down 0.5s ease-out;
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.styled-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.styled-form h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.styled-form input,
+.styled-form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.styled-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.styled-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Layout */
+.social-layout {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.left-section {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.right-section {
+    flex: 2;
+    padding: 20px;
+}
+
+/* Blog post section */
+.blog-post {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 20px 0; /* Increased margin for spacing */
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    width: 300px; /* Fixed width for Instagram-like appearance */
+    height: 400px; /* Fixed height for uniformity */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-post img {
+    width: 100%;
+    height: 200px; /* Fixed height for the image */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-post h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.blog-post p {
+    color: #555;
+    flex-grow: 1; /* Allows description to take remaining space */
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%; /* Ensures the buttons take full width */
+}
+
+.actions button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    background-color: #0056b3;
+}
+
+.actions .like-count {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Comment Section */
+.comment-section {
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    width: 100%; /* Ensures comment section takes full width */
+}
+
+.comment-input {
+    display: flex;
+    margin-top: 10px;
+}
+
+.comment-section input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.comment-section button {
+    padding: 8px 15px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-section button:hover {
+    background-color: #ff3e30;
+}
+
+.comments-list {
+    margin-top: 10px;
+}
+
+.comment {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+}

@@ -11,7 +11,7 @@ const Navbar = () => {
       {/* Left Capsule */}
       <div className="capsule capsule-left flex justify-end items-center bg-gray-800 text-white rounded-full transform scale-x-0 origin-left animate-openCapsuleLeft">
         <ul className="flex space-x-5 pr-10">
-          <li className="nav-item-left">Social</li>
+          <li className="nav-item-left"><Link to="/social"> Social</Link></li>
           <li className="nav-item-left">Community</li>
           <li className="nav-item-left">Events</li>
         </ul>

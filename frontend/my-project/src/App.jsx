@@ -11,6 +11,8 @@ import Signup from "./pages/signup-frontend/Signup.jsx"
 import { useEffect, useState } from "react";
 import { div } from "framer-motion/client";
 import Loader from "./components/Loader.jsx";
+import Social from "./pages/Social/Social";
+
 
 
 const App = () => {
@@ -39,6 +41,7 @@ const App = () => {
                 <Footer />
               </>} />
               <Route path="/chatgpt" element={<Chatgpt />} /> {/* Route to ChatGPT page */}
+              <Route path="/social" element={<Social />} /> {/* Route to Social page */}
               <Route path="/signup" element={<Signup/>}/>
               <Route path="/login" element={<Login/>}/>
             </Routes>
