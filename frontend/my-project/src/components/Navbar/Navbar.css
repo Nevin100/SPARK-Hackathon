@@ -1,0 +1,131 @@
+/* Navbar Container Styling */
+.navbar-container {
+    width: 100%; /* Full-width navbar */
+    height: 60px; /* Smaller height for professional look */
+    display: flex; /* Flex to align items centrally */
+    justify-content: center; /* Center elements horizontally */
+    align-items: center; /* Align items vertically */
+    z-index: 50;
+  }
+  
+  /* Logo Styling */
+  .logo-image {
+    border-radius: 50%; /* Make the logo circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    width: 50px; /* Adjust width to fit navbar */
+    height: 50px; /* Adjust height to fit navbar */
+  }
+  
+  /* Capsule Styles */
+  .capsule {
+    width: 18%; /* Capsules are smaller for professional look */
+    height: 40px; /* Height of the capsules */
+    display: flex;
+    align-items: center; /* Align items vertically */
+    background-color: #333;
+    border-radius: 9999px;
+    opacity: 1; /* Ensure capsules are visible */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Capsule Animations */
+  .capsule-left {
+    animation: openCapsuleLeft 1s ease-in-out forwards 0.5s;
+  }
+  
+  .capsule-right {
+    animation: openCapsuleRight 1s ease-in-out forwards 0.5s;
+  }
+  
+  /* Nav Items Styling for Left and Right Capsules */
+  .nav-item-left,
+  .nav-item-right {
+    font-size: 14px; /* Smaller font size for professional look */
+    font-weight: 500; /* Medium weight for better readability */
+    color: #fff; /* White color */
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .nav-item-left:hover,
+  .nav-item-right:hover {
+    transform: scale(1.05); /* Slight scale on hover */
+    color: #f9a825; /* Yellowish color on hover */
+  }
+  
+  /* Capsules Opening Animation */
+  @keyframes openCapsuleLeft {
+    0% {
+      transform: scaleX(0);
+      opacity: 0; /* Start invisible */
+    }
+    50% {
+      opacity: 1; /* Fade in halfway */
+    }
+    100% {
+      transform: scaleX(1);
+      opacity: 1; /* Fully visible */
+    }
+  }
+  
+  @keyframes openCapsuleRight {
+    0% {
+      transform: scaleX(0);
+      opacity: 0; /* Start invisible */
+    }
+    50% {
+      opacity: 1; /* Fade in halfway */
+    }
+    100% {
+      transform: scaleX(1);
+      opacity: 1; /* Fully visible */
+    }
+  }
+  
+  /* Hover Effects for Nav Items */
+  .nav-item-left::before,
+  .nav-item-right::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #f9a825; /* Underline color */
+    transition: width 0.3s ease;
+  }
+  
+  .nav-item-left:hover::before,
+  .nav-item-right:hover::before {
+    width: 100%; /* Underline effect on hover */
+  }
+  
+  /* Fade-in Animation for Capsule Items */
+  .capsule ul li {
+    opacity: 1; /* Ensure text is visible */
+    font-size: 14px;
+    transition: opacity 1s ease;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar-container {
+      padding: 1rem; /* Adjust padding for smaller screens */
+    }
+  
+    .capsule {
+      width: 90%; /* Full width for capsules on smaller screens */
+    }
+  
+    .logo-image {
+      width: 40px; /* Smaller logo for mobile */
+      height: 40px; /* Smaller logo for mobile */
+    }
+  
+    .nav-item-left,
+    .nav-item-right {
+      font-size: 12px; /* Smaller font size for mobile */
+    }
+  }
+  
