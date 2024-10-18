@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  html {
+    overflow-x: hidden;
+  }
+  
+  .message {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    padding-top: 30px;
+  }
+  
+  /* Styling for User messages */
+  .message .UserMsg {
+    clear: both;
+    background-color: rgb(163 163 163 / 0.8);
+    padding: 15px;
+    border-radius: 30px;
+    max-width: 60vw;
+    align-self: flex-end; /* Align messages to the right */
+    min-width: 20vw;
+    margin-bottom: 15px;
+  }
+  
+  /* Styling for AI Responses */
+  .message .ResponseMsg {
+    clear: both;
+    background-color: rgb(163 163 163 / 0.8);
+    padding: 15px;
+    border-radius: 30px;
+    max-width: 60vw;
+    align-self: flex-start; /* Align messages to the left */
+    min-width: 20vw;
+    margin-bottom: 15px;
+    font-size: large;
+  }
+  

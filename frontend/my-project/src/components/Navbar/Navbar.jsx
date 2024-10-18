@@ -16,7 +16,9 @@ const Navbar = () => {
 
       {/* Logo at the center */}
       <div className="logo-container z-10 mx-4">
-        <img src={logo} alt="Logo" className="logo-image w-12 h-12" />
+        <a href="/">
+          <img src={logo} alt="Logo" className="logo-image w-12 h-12" />
+        </a>
       </div>
 
       {/* Right Capsule */}
