@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../assets/logo.jpg"; // Import your logo image
 import "./Navbar.css"; // External CSS for animations
+import Signup from "../../pages/signup-frontend/Signup";
+// import { BrowserRouter as Route,Router,Routes } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -26,9 +29,14 @@ const Navbar = () => {
         <ul className="flex space-x-5 pl-10">
           <li className="nav-item-right">Projects</li>
           <li className="nav-item-right">About Us</li>
-          <li className="nav-item-right">Sign In</li>
+          
+          <li className="nav-item-right">
+            <Link to="/signup">SignUp</Link>
+          </li>
+
         </ul>
       </div>
+      <Outlet/>
     </div>
   );
 };

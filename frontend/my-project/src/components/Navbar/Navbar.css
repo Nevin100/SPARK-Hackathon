@@ -1,4 +1,4 @@
-/* Navbar Container Styling */
+Navbar Container Styling
 .navbar-container {
     width: 100%; /* Full-width navbar */
     height: 60px; /* Smaller height for professional look */
@@ -61,29 +61,28 @@
       opacity: 0; /* Start invisible */
     }
     50% {
-      opacity: 1; /* Fade in halfway */
+      opacity: 1; 
     }
     100% {
       transform: scaleX(1);
-      opacity: 1; /* Fully visible */
+      opacity: 1;
     }
   }
   
   @keyframes openCapsuleRight {
     0% {
       transform: scaleX(0);
-      opacity: 0; /* Start invisible */
+      opacity: 0;
     }
     50% {
-      opacity: 1; /* Fade in halfway */
+      opacity: 1;
     }
     100% {
       transform: scaleX(1);
-      opacity: 1; /* Fully visible */
+      opacity: 1; 
     }
   }
   
-  /* Hover Effects for Nav Items */
   .nav-item-left::before,
   .nav-item-right::before {
     content: "";
@@ -92,18 +91,18 @@
     left: 0;
     width: 0%;
     height: 2px;
-    background-color: #f9a825; /* Underline color */
+    background-color: #f9a825;
     transition: width 0.3s ease;
   }
   
   .nav-item-left:hover::before,
   .nav-item-right:hover::before {
-    width: 100%; /* Underline effect on hover */
+    width: 100%; 
   }
   
-  /* Fade-in Animation for Capsule Items */
+ 
   .capsule ul li {
-    opacity: 1; /* Ensure text is visible */
+    opacity: 1;
     font-size: 14px;
     transition: opacity 1s ease;
   }
@@ -111,21 +110,20 @@
   /* Responsive Styles */
   @media (max-width: 768px) {
     .navbar-container {
-      padding: 1rem; /* Adjust padding for smaller screens */
+      padding: 1rem; 
     }
   
     .capsule {
-      width: 90%; /* Full width for capsules on smaller screens */
+      width: 90%; 
     }
   
     .logo-image {
-      width: 40px; /* Smaller logo for mobile */
-      height: 40px; /* Smaller logo for mobile */
+      width: 40px; 
+      height: 40px;
     }
   
     .nav-item-left,
     .nav-item-right {
-      font-size: 12px; /* Smaller font size for mobile */
+      font-size: 12px;
     }
   }
-  

@@ -2,6 +2,8 @@ import { useNavigate } from "react-router-dom";  // Import useNavigate from reac
 import video1 from "../assets/video1.mp4";
 import video2 from "../assets/video2.mp4";
 import logo from "../assets/logo.jpg"; // Import your logo
+import Loader from "./Loader";
+import { useState,useEffect } from "react";
 
 const HeroSection = () => {
   const navigate = useNavigate();  // Initialize useNavigate
@@ -27,8 +29,9 @@ const HeroSection = () => {
         Empower your creativity and bring your ideas to one of the most trusted
         platform
       </p>
-
+      
       <div className="flex mt-10 justify-center">
+        
         <video
           autoPlay
           loop
