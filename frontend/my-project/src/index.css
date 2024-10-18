@@ -10,3 +10,7 @@
   font-family: "Poppins",sans-serif;
   color-scheme: dark;
 }
+
+body{
+  overflow: hidden;
+}
